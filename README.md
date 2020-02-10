@@ -1,4 +1,4 @@
-### NLP with Disaster Tweets
+# NLP with Disaster Tweets
 This is a project based on a 
 [kaggle competition](https://www.kaggle.com/c/nlp-getting-started/overview) 
 that requires participants to predict which tweets are about real disasters and which are not. The dataset
