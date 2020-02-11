@@ -13,6 +13,9 @@ class Keyword:
     def replace(self, to_be_replaced, to_replace = " "):
         return self.keyword_col.str.replace(to_be_replaced, to_replace)
 
+    def preprocess(self):
+        self.fill_na()
+        self.replace()
 
 class Location:
     def __init__(self, location_col):
