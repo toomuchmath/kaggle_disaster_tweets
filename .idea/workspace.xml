@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c14735a-3c59-4112-b880-4a4771343e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/preprocessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nlp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nlp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,10 +119,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added a new python file for tweet prediction" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="116" key="CommitChangelistDialog2" timestamp="1581371643356">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="461" y="40" key="CommitChangelistDialog2" timestamp="1581454353822">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="614" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581371643356" />
+    <state x="461" y="40" key="CommitChangelistDialog2/0.23.1440.812@0.23.1440.812" timestamp="1581454353822" />
     <state width="681" height="266" key="GridCell.Tab.0.bottom" timestamp="1581372365406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

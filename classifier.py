@@ -6,7 +6,6 @@ import seaborn as sns
 import time
 import re
 import string
-import nltk
 from nltk.corpus import stopwords, wordnet
 from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -14,12 +13,12 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.naive_bayes import MultinomialNB, ComplementNB
 from sklearn.svm import SVC
 from sklearn.model_selection import cross_val_score, train_test_split, GridSearchCV
-from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer
-from nltk import corpus, tokenize, stem, pos_tag, word_tokenize, collocations
-from xgboost import XGBClassifier
+from nltk import pos_tag, word_tokenize
+from preprocessing import Keyword
 
 # load data
+
 train_df = pd.read_csv("/kaggle/input/nlp-getting-started/train.csv")
 test_df = pd.read_csv("/kaggle/input/nlp-getting-started/test.csv")
 output_df = pd.read_csv("/kaggle/input/nlp-getting-started/sample_submission.csv")
@@ -70,10 +69,11 @@ def clean_text(text_vector):
         .apply(lambda text: remove_emoji(text)).apply(lambda text: remove_punct(text))
     return text_vector
 
+
 train_df["cleaned_text"] = clean_text(train_df.text)
 test_df["cleaned_text"] = clean_text(test_df.text)
 
-# preprocessing text
+# pre-processing text
 
 stop_words = stopwords.words("english")
 lemmatizer = WordNetLemmatizer()
@@ -164,6 +164,12 @@ train_df["preprocessed_location"] = train_df.location.apply(lambda location:prep
 test_df["preprocessed_location"] = test_df.location.apply(lambda location:preprocess_location(location))
 
 # preprocess keyword
+
+"""
+keyword_col = Keyword()
+keyword_col.fill_na()
+keyword_col.replace("%20", " ")
+"""
 
 train_df.keyword = train_df.keyword.fillna(" ")
 train_df.keyword = train_df.keyword.str.replace("%20", " ")
