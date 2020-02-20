@@ -165,10 +165,6 @@ test_df["preprocessed_location"] = test_df.location.apply(lambda location:prepro
 
 # preprocess keyword
 
-"""
-keyword_col = Keyword(train_df.keyword).preprocess()
-"""
-
 train_df.keyword = train_df.keyword.fillna(" ")
 train_df.keyword = train_df.keyword.str.replace("%20", " ")
 
