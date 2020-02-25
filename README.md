@@ -50,7 +50,7 @@ classification report
 weighted avg       0.80      0.80      0.80      1523
 ```
 
-The Multinomial NB has the following ROC curve:
+Multinomial NB has the following ROC curve:
 
  ![mnb_roc_curve](./figures/mnb_roc.png)
  
