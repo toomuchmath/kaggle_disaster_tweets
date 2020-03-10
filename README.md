@@ -5,10 +5,13 @@ that requires participants to predict which tweets are about real disasters and 
 was originally created by figure-eight and is available for download on their
 [website](https://www.figure-eight.com/data-for-everyone/).
 
-After numerous rounds of experimenting with different classifiers as well as their yperparameters, I have 
+After numerous rounds of experimenting with different classifiers as well as their hyperparameters, I have 
 narrowed down to Multinomial Naive Bayes and Complement Naive Bayes. Below are the results that I used to
 compare before deciding to go with Multinomial NB, with an alpha of 0.75. It achieves an f1 
-score of 0.80061 currently (competition hasn't ended yet).
+score of 0.80061.
+
+Update (10/03/2020): After trying transfer learning using pretrained BERT, my f1 score got boosted to 0.82413. Find 
+the notebook [here](https://github.com/toomuchmath/kaggle_disaster_tweets/blob/master/scripts/BERT_pytorch_disaster_tweets.ipynb).
 
 ``` 
 MultinomialNB(alpha=0.75)
